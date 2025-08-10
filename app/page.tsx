@@ -136,8 +136,8 @@ export default function AlvestLanding() {
 
         <div className="container mx-auto relative z-10">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="space-y-8 animate-fade-in-up">
-              <div className="space-y-6">
+            <div className="space-y-8 animate-fade-in-up mt-10 lg:mt-0">
+              <div className="space-y-6"> 
                 <div className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-blue-500/20 to-cyan-500/20 border border-blue-500/30 backdrop-blur-sm">
                   <Zap className="w-4 h-4 mr-2 text-blue-400" />
                   <span className="text-sm text-blue-300">Tecnologia Avançada em Climatização</span>
