@@ -142,26 +142,21 @@ export default function AlvestLanding() {
                   <Zap className="w-4 h-4 mr-2 text-blue-400" />
                   <span className="text-sm text-blue-300">Tecnologia Avançada em Climatização</span>
                 </div>
-                <div className="text-center">
-                  <p className="text-lg text-blue-200 font-medium">O padrão premium para o seu conforto!</p>
-                </div>
+                
                 
                                   <h1 className="text-5xl md:text-7xl font-bold leading-tight">
                     <span className="bg-gradient-to-r from-white via-blue-100 to-cyan-200 bg-clip-text text-transparent">
                       Climatização
                     </span>
                     <br />
-                    <span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent animate-gradient">
-                      do Futuro
-                    </span>
-                    <br />
+                 
                     <span className="bg-gradient-to-r from-yellow-400 via-orange-400 to-yellow-500 bg-clip-text text-transparent text-4xl md:text-6xl">
                       Premium
                     </span>
                   </h1>
                 
                 <p className="text-xl text-slate-300 leading-relaxed max-w-lg">
-                  Revolucionamos o conceito de climatização com <span className="bg-yellow-400/20 px-2 py-1 rounded">tecnologia de ponta, design inteligente e</span> eficiência energética incomparável <span className="text-blue-300 font-medium">em Natal e região, trazendo conforto</span>.
+                  Revolucionamos o conceito de climatização em Natal e região, com eficiência energética incomparável <span className="text-blue-300 font-medium">em Natal e região, trazendo conforto</span>.
                 </p>
               </div>
 
@@ -196,10 +191,6 @@ export default function AlvestLanding() {
                 </div>
                 <div className="flex items-center space-x-2">
                   <Award className="w-5 h-5 text-blue-400" />
-                  <span className="text-slate-400">Certificação ISO</span>
-                </div>
-                <div className="flex items-center space-x-2 mt-2">
-                  <Shield className="w-5 h-5 text-green-400" />
                   <span className="text-slate-400">Registro CRT</span>
                 </div>
               </div>
@@ -236,7 +227,7 @@ export default function AlvestLanding() {
                   <div className="absolute -top-6 -right-6 bg-gradient-to-br from-slate-800/90 to-slate-900/90 backdrop-blur-xl p-4 rounded-2xl border border-slate-700/50 shadow-2xl">
                     <div className="flex items-center space-x-2">
                       <Users className="w-5 h-5 text-blue-400" />
-                      <span className="text-sm text-slate-300">+500 Projetos</span>
+                      <span className="text-sm text-slate-300">+10 anos</span>
                     </div>
                   </div>
                 </div>
@@ -271,7 +262,7 @@ export default function AlvestLanding() {
                 icon: <Snowflake className="w-8 h-8" />,
                 title: "Instalação Premium",
                 description: "Instalação com técnicos especializados com monitoramento contínuo",
-                features: ["atendimento personalizado", "configuração de desempenho", "Eficiência A+++"],
+                features: ["Atendimento personalizado", "Configuração de desempenho", "Eficiência A+++"],
                 gradient: "from-blue-500 to-cyan-500",
                 glowColor: "blue-500"
               },
@@ -440,11 +431,11 @@ export default function AlvestLanding() {
             
             <h2 className="text-4xl md:text-6xl font-bold">
               <span className="bg-gradient-to-r from-white via-blue-100 to-cyan-200 bg-clip-text text-transparent">
-                Pronto para o
+                A climatização do seu
               </span>
               <br />
               <span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent">
-                Futuro da Climatização?
+                ambiente em boas mãos!
               </span>
             </h2>
             
@@ -510,7 +501,7 @@ export default function AlvestLanding() {
                 icon: <Phone className="w-8 h-8" />,
                 title: "Telefone",
                 description: "Ligue diretamente",
-                action: "(84) 9485-4004",
+                action: "(84) 99485-4004",
                 gradient: "from-blue-500 to-cyan-500",
                 onClick: () => window.open('tel:+5584994854004')
               },
@@ -518,7 +509,7 @@ export default function AlvestLanding() {
                 icon: <Clock className="w-8 h-8" />,
                 title: "Emergência",
                 description: "Suporte 24 horas",
-                action: "Atendimento 24/7",
+                action: "(84) 99233-5218",
                 gradient: "from-red-500 to-orange-500",
                 onClick: () => openWhatsApp("EMERGÊNCIA! Preciso de atendimento urgente!")
               }
