@@ -19,8 +19,23 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/',
   },
+  icons: {
+    icon: [
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/favicon.ico' },
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
+    other: [
+      { rel: 'mask-icon', url: '/favicon.svg', color: '#3b82f6' },
+    ],
+  },
+  manifest: '/site.webmanifest',
   openGraph: {
-    title: 'Alvest - Climatização do Futuro',
+    title: 'Alvest - Climatização Premium do Futuro',
     description: 'Tecnologia de ponta em climatização com eficiência energética incomparável. Instalação inteligente e manutenção preditiva no RN.',
     url: 'https://alvest.com.br',
     siteName: 'Alvest',
@@ -28,18 +43,18 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: '/og-image.jpg',
+        url: '/Screenshot_5.png',
         width: 1200,
         height: 630,
-        alt: 'Alvest - Climatização do Futuro',
+        alt: 'Alvest - Climatização Premium do Futuro - Landing Page',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Alvest - Climatização do Futuro',
+    title: 'Alvest - Climatização Premium do Futuro',
     description: 'Tecnologia de ponta em climatização com eficiência energética incomparável.',
-    images: ['/og-image.jpg'],
+    images: ['/Screenshot_5.png'],
   },
   robots: {
     index: true,

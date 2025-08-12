@@ -48,7 +48,7 @@ export default function AlvestLanding() {
             background: `radial-gradient(600px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(59, 130, 246, 0.15), transparent 40%)`
           }}
         ></div>
-        <div className="absolute inset-0 bg-slate-950/50 animate-pulse" style={{
+        <div className="absolute inset-0 bg-slate-900/50 animate-pulse" style={{
           backgroundImage: 'radial-gradient(circle at 25px 25px, rgba(51, 65, 85, 0.05) 2px, transparent 2px)',
           backgroundSize: '50px 50px'
         }}></div>
