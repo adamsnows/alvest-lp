@@ -4,9 +4,59 @@ import { GeistMono } from 'geist/font/mono'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
-  generator: 'v0.dev',
+  title: 'Alvest - Climatização Premium do Futuro | Tecnologia Avançada em Refrigeração e Ar Condicionado',
+  description: 'Revolucionamos o conceito de climatização com tecnologia de ponta, design inteligente e eficiência energética incomparável. Instalação, manutenção e refrigeração industrial no RN.',
+  keywords: 'climatização, ar condicionado, refrigeração industrial, instalação inteligente, manutenção preditiva, eficiência energética, Rio Grande do Norte, tecnologia IoT, sustentabilidade',
+  authors: [{ name: 'Alvest' }],
+  creator: 'Alvest',
+  publisher: 'Alvest',
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  metadataBase: new URL('https://alvest.com.br'),
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    title: 'Alvest - Climatização do Futuro',
+    description: 'Tecnologia de ponta em climatização com eficiência energética incomparável. Instalação inteligente e manutenção preditiva no RN.',
+    url: 'https://alvest.com.br',
+    siteName: 'Alvest',
+    locale: 'pt_BR',
+    type: 'website',
+    images: [
+      {
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Alvest - Climatização do Futuro',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Alvest - Climatização do Futuro',
+    description: 'Tecnologia de ponta em climatização com eficiência energética incomparável.',
+    images: ['/og-image.jpg'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  verification: {
+    google: 'seu-codigo-google-verification',
+    yandex: 'seu-codigo-yandex-verification',
+    yahoo: 'seu-codigo-yahoo-verification',
+  },
 }
 
 export default function RootLayout({
@@ -15,7 +65,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
       <head>
         <style>{`
 html {

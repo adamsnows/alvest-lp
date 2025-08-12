@@ -142,20 +142,26 @@ export default function AlvestLanding() {
                   <Zap className="w-4 h-4 mr-2 text-blue-400" />
                   <span className="text-sm text-blue-300">Tecnologia Avançada em Climatização</span>
                 </div>
+                <div className="text-center">
+                  <p className="text-lg text-blue-200 font-medium">O padrão premium para o seu conforto!</p>
+                </div>
                 
-                <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-                  <span className="bg-gradient-to-r from-white via-blue-100 to-cyan-200 bg-clip-text text-transparent">
-                    Climatização
-                  </span>
-                  <br />
-                  <span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent animate-gradient">
-                    do Futuro
-                  </span>
-                </h1>
+                                  <h1 className="text-5xl md:text-7xl font-bold leading-tight">
+                    <span className="bg-gradient-to-r from-white via-blue-100 to-cyan-200 bg-clip-text text-transparent">
+                      Climatização
+                    </span>
+                    <br />
+                    <span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent animate-gradient">
+                      do Futuro
+                    </span>
+                    <br />
+                    <span className="bg-gradient-to-r from-yellow-400 via-orange-400 to-yellow-500 bg-clip-text text-transparent text-4xl md:text-6xl">
+                      Premium
+                    </span>
+                  </h1>
                 
                 <p className="text-xl text-slate-300 leading-relaxed max-w-lg">
-                  Revolucionamos o conceito de climatização com tecnologia de ponta, 
-                  design inteligente e eficiência energética incomparável.
+                  Revolucionamos o conceito de climatização com <span className="bg-yellow-400/20 px-2 py-1 rounded">tecnologia de ponta, design inteligente e</span> eficiência energética incomparável <span className="text-blue-300 font-medium">em Natal e região, trazendo conforto</span>.
                 </p>
               </div>
 
@@ -192,6 +198,10 @@ export default function AlvestLanding() {
                   <Award className="w-5 h-5 text-blue-400" />
                   <span className="text-slate-400">Certificação ISO</span>
                 </div>
+                <div className="flex items-center space-x-2 mt-2">
+                  <Shield className="w-5 h-5 text-green-400" />
+                  <span className="text-slate-400">Registro CRT</span>
+                </div>
               </div>
             </div>
 
@@ -218,7 +228,7 @@ export default function AlvestLanding() {
                       </div>
                       <div>
                         <p className="font-semibold text-white">Garantia Premium</p>
-                        <p className="text-sm text-slate-400">24 meses completos</p>
+                        <p className="text-sm text-slate-400">180 dias completos</p>
                       </div>
                     </div>
                   </div>
@@ -259,9 +269,9 @@ export default function AlvestLanding() {
             {[
               {
                 icon: <Snowflake className="w-8 h-8" />,
-                title: "Instalação Inteligente",
-                description: "Sistemas de última geração com IoT integrado e controle remoto avançado.",
-                features: ["Sensores inteligentes", "Controle por app", "Eficiência A+++"],
+                title: "Instalação Premium",
+                description: "Instalação com técnicos especializados com monitoramento contínuo",
+                features: ["atendimento personalizado", "configuração de desempenho", "Eficiência A+++"],
                 gradient: "from-blue-500 to-cyan-500",
                 glowColor: "blue-500"
               },
@@ -269,7 +279,7 @@ export default function AlvestLanding() {
                 icon: <Wrench className="w-8 h-8" />,
                 title: "Manutenção Preditiva",
                 description: "Monitoramento 24/7 com IA para prevenir problemas antes que aconteçam.",
-                features: ["Diagnóstico por IA", "Alertas automáticos", "Manutenção preventiva"],
+                features: ["Diagnostico remoto e presencial", "Alertas automáticos", "Manutenção preventiva"],
                 gradient: "from-purple-500 to-pink-500",
                 glowColor: "purple-500"
               },
@@ -285,7 +295,7 @@ export default function AlvestLanding() {
                 icon: <Clock className="w-8 h-8" />,
                 title: "Suporte Instantâneo",
                 description: "Atendimento 24/7 com realidade aumentada para diagnóstico remoto.",
-                features: ["Diagnóstico AR", "Resposta em 30min", "Técnicos especializados"],
+                features: ["Diagnóstico remoto", "Resposta em 30min", "Técnicos especializados"],
                 gradient: "from-orange-500 to-red-500",
                 glowColor: "orange-500"
               },
@@ -293,7 +303,7 @@ export default function AlvestLanding() {
                 icon: <Shield className="w-8 h-8" />,
                 title: "Garantia Premium",
                 description: "Cobertura estendida com monitoramento contínuo e peças originais.",
-                features: ["24 meses garantia", "Peças originais", "Suporte vitalício"],
+                features: ["180 dias de garantia", "Peças originais", "Suporte vitalicio"],
                 gradient: "from-indigo-500 to-blue-500",
                 glowColor: "indigo-500"
               },
@@ -349,40 +359,41 @@ export default function AlvestLanding() {
         </div>
       </section>
 
-      {/* About Section */}
+      {/* Technical Support Section */}
       <section id="sobre" className="relative py-24 px-4">
         <div className="container mx-auto">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-8">
               <div>
                 <div className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-blue-500/20 to-cyan-500/20 border border-blue-500/30 backdrop-blur-sm mb-6">
-                  <Award className="w-4 h-4 mr-2 text-blue-400" />
-                  <span className="text-sm text-blue-300">Excelência Comprovada</span>
+                  <Shield className="w-4 h-4 mr-2 text-blue-400" />
+                  <span className="text-sm text-blue-300">Assistência Técnica Autorizada</span>
                 </div>
                 
                 <h2 className="text-4xl md:text-5xl font-bold mb-6">
                   <span className="bg-gradient-to-r from-white to-slate-300 bg-clip-text text-transparent">
-                    Inovação que
+                    Assistência Técnica
                   </span>
                   <br />
                   <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
-                    Transforma
+                    Especializada
                   </span>
                 </h2>
                 
                 <p className="text-lg text-slate-300 leading-relaxed mb-8">
-                  Pioneiros em tecnologia de climatização no Rio Grande do Norte, 
-                  combinamos expertise técnica com inovação constante para entregar 
-                  soluções que superam expectativas.
+                  Somos assistência técnica especializada e autorizada das principais marcas 
+                  do mercado: <span className="text-blue-300 font-semibold">Gree</span>, <span className="text-green-300 font-semibold">Elgin</span> e <span className="text-orange-300 font-semibold">TCL</span>. 
+                  Nossa certificação garante que você receba o melhor serviço com peças originais 
+                  e garantia estendida.
                 </p>
               </div>
 
               <div className="grid sm:grid-cols-2 gap-6">
                 {[
                   { number: "500+", label: "Projetos Executados", icon: <Users className="w-6 h-6" /> },
-                  { number: "15+", label: "Anos de Inovação", icon: <Award className="w-6 h-6" /> },
+                  { number: "15+", label: "Anos de Experiência", icon: <Award className="w-6 h-6" /> },
                   { number: "24/7", label: "Suporte Disponível", icon: <Clock className="w-6 h-6" /> },
-                  { number: "98%", label: "Satisfação Cliente", icon: <Star className="w-6 h-6" /> }
+                  { number: "100%", label: "Peças Originais", icon: <Shield className="w-6 h-6" /> }
                 ].map((stat, index) => (
                   <div key={index} className="group relative">
                     <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-2xl blur opacity-20 group-hover:opacity-40 transition-opacity"></div>
@@ -406,7 +417,7 @@ export default function AlvestLanding() {
                 <div className="relative bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-sm rounded-3xl p-8 border border-slate-700/50">
                   <Image
                     src="/placeholder-rwm7v.png"
-                    alt="Equipe técnica especializada da Alvest"
+                    alt="Assistência técnica autorizada Gree, Elgin e TCL - Alvest"
                     width={600}
                     height={500}
                     className="rounded-2xl shadow-2xl hover:scale-105 transition-transform duration-500"
