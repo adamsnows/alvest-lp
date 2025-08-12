@@ -611,7 +611,7 @@ export default function AlvestLanding() {
           </div>
 
           <div className="border-t border-slate-800/50 mt-12 pt-8 text-center text-slate-400">
-            <p>&copy; 2024 Alvest. Todos os direitos reservados. Tecnologia que transforma.</p>
+            <p>&copy; 2025 Alvest. Todos os direitos reservados. Tecnologia que transforma.</p>
           </div>
         </div>
       </footer>
