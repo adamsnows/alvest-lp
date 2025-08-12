@@ -155,9 +155,9 @@ export default function AlvestLanding() {
                     </span>
                   </h1>
                 
-                <p className="text-xl text-slate-300 leading-relaxed max-w-lg">
-                  Revolucionamos o conceito de climatização em Natal e região, com eficiência energética incomparável <span className="text-blue-300 font-medium">em Natal e região, trazendo conforto</span>.
-                </p>
+                                  <p className="text-xl text-slate-300 leading-relaxed max-w-lg">
+                    Revolucionamos o conceito de climatização em Natal e região, com eficiência energética incomparável trazendo conforto e qualidade de vida.
+                  </p>
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
