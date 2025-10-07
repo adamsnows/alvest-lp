@@ -229,7 +229,7 @@ export default function AlvestLanding() {
                 {/* Main image container */}
                 <div className="relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200 shadow-lg">
                   <Image
-                    src="/WhatsApp Image 2025-09-23 at 21.04.58 (3).jpeg"
+                    src="/portfolio-1.jpeg"
                     alt="Técnico da Alvest realizando manutenção especializada"
                     width={600}
                     height={600}
@@ -497,7 +497,7 @@ export default function AlvestLanding() {
                 <div className="absolute -inset-2 bg-gradient-to-r from-blue-200/30 to-cyan-200/30 rounded-3xl blur-lg group-hover:blur-xl transition-all duration-500"></div>
                 <div className="relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200 shadow-lg">
                   <Image
-                    src="/WhatsApp Image 2025-09-23 at 21.04.59 (3).jpeg"
+                    src="/portfolio-2.jpeg"
                     alt="Técnico especializado Alvest em refrigeração industrial"
                     width={600}
                     height={500}
