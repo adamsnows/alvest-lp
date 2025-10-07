@@ -511,7 +511,7 @@ export default function AlvestLanding() {
       </section>
 
       {/* Portfolio Section */}
-      <section id="portfólio" className="relative py-24 px-4 bg-gradient-to-b from-white to-gray-50">
+      <section id="portfólio" className="relative py-24 px-4">
         <div className="container mx-auto relative z-10">
           <div className="text-center mb-20">
             <div className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-blue-100 to-cyan-100 border border-blue-300 mb-6">
