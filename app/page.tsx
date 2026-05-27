@@ -215,7 +215,7 @@ export default function AlvestLanding() {
                 {/* Main image container */}
                 <div className="relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200 shadow-lg">
                   <Image
-                    src="/portfolio-1.jpeg"
+                    src="/image.png"
                     alt="Técnico da Alvest realizando manutenção especializada"
                     width={600}
                     height={600}
@@ -516,12 +516,13 @@ export default function AlvestLanding() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              '/portfolio-1.jpeg',
-              '/portfolio-2.jpeg',
-              '/portfolio-3.jpeg',
-              '/portfolio-4.jpeg',
-              '/portfolio-5.jpeg',
-              '/portfolio-6.jpeg',
+              '/image copy.png',
+              '/image copy 2.png',
+              '/image copy 3.png',
+              '/image copy 4.png',
+              '/image copy 5.png',
+              '/image copy 6.png',
+              '/image copy 7.png',
             ].map((image, index) => (
               <div
                 key={index}
