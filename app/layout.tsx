@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { GeistSans } from 'geist/font/sans'
 import { GeistMono } from 'geist/font/mono'
+import Script from 'next/script'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -81,6 +82,34 @@ html {
 }
         `}</style>
       </head>
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=AW-18016500797"
+        strategy="afterInteractive"
+      />
+      <Script id="google-ads" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'AW-18016500797');
+        `}
+      </Script>
+      <Script id="google-ads-conversion" strategy="afterInteractive">
+        {`
+          function gtag_report_conversion(url) {
+            var callback = function () {
+              if (typeof(url) != 'undefined') {
+                window.location = url;
+              }
+            };
+            gtag('event', 'conversion', {
+              'send_to': 'AW-18016500797/ktY3CK-ZwrQcEL34945D',
+              'event_callback': callback
+            });
+            return false;
+          }
+        `}
+      </Script>
       <body>{children}</body>
     </html>
   )

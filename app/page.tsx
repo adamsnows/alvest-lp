@@ -54,6 +54,9 @@ export default function AlvestLanding() {
     const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
       message,
     )}`;
+    if (typeof (window as any).gtag_report_conversion === 'function') {
+      (window as any).gtag_report_conversion();
+    }
     window.open(url, '_blank');
   };
 
