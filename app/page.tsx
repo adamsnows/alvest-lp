@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useRef } from 'react';
+import { useState, useRef } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import {
@@ -26,24 +26,7 @@ import Image from 'next/image';
 
 export default function AlvestLanding() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [scrollY, setScrollY] = useState(0);
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const heroRef = useRef<HTMLElement>(null);
-
-  useEffect(() => {
-    const handleScroll = () => setScrollY(window.scrollY);
-    const handleMouseMove = (e: MouseEvent) => {
-      setMousePosition({ x: e.clientX, y: e.clientY });
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    window.addEventListener('mousemove', handleMouseMove);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-      window.removeEventListener('mousemove', handleMouseMove);
-    };
-  }, []);
 
   const whatsappNumber = '5584994854004';
   const whatsappMessage =
@@ -85,7 +68,7 @@ export default function AlvestLanding() {
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center space-x-8">
-              {['Início', 'Serviços', 'Sobre', 'Portfólio', 'Contato'].map((item, index) => (
+              {['Início', 'Serviços', 'Sobre', 'Portfólio', 'Contato'].map((item) => (
                 <Link
                   key={item}
                   href={`#${item.toLowerCase()}`}
@@ -500,8 +483,8 @@ export default function AlvestLanding() {
                 <div className="absolute -inset-2 bg-gradient-to-r from-blue-200/30 to-cyan-200/30 rounded-3xl blur-lg group-hover:blur-xl transition-all duration-500"></div>
                 <div className="relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200 shadow-lg">
                   <Image
-                    src="/portfolio-2.jpeg"
-                    alt="Técnico especializado Alvest em refrigeração industrial"
+                    src="/ar-condition.png"
+                    alt="Assistência técnica autorizada Gree, Elgin e TCL - Alvest"
                     width={600}
                     height={500}
                     className="rounded-2xl shadow-2xl hover:scale-105 transition-transform duration-500"
@@ -555,6 +538,73 @@ export default function AlvestLanding() {
                   />
                 </div>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="relative py-24 px-4 bg-gradient-to-br from-blue-50 to-cyan-50">
+        <div className="container mx-auto relative z-10">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-blue-100 to-cyan-100 border border-blue-300 mb-6">
+              <Star className="w-4 h-4 mr-2 text-blue-600" />
+              <span className="text-sm text-blue-800">O que dizem nossos clientes</span>
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold">
+              <span className="bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent">
+                Clientes Satisfeitos
+              </span>
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              {
+                name: 'Carlos Henrique',
+                role: 'Empresário',
+                text: 'Instalaram 6 aparelhos na minha empresa em um dia. Serviço impecável, técnicos pontuais e muito profissionais. Recomendo demais!',
+                stars: 5,
+              },
+              {
+                name: 'Ana Paula',
+                role: 'Residencial',
+                text: 'Meu ar condicionado parou de funcionar num sábado à noite e eles vieram no mesmo dia. Atendimento 24h de verdade. Nota 10!',
+                stars: 5,
+              },
+              {
+                name: 'Roberto Maia',
+                role: 'Lojista',
+                text: 'Assistência técnica autorizada Gree. Peças originais, garantia real e preço justo. Não troco por nenhuma outra empresa.',
+                stars: 5,
+              },
+            ].map((testimonial, index) => (
+              <Card
+                key={index}
+                className="bg-white/90 backdrop-blur-sm border border-gray-200 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+              >
+                <CardContent className="p-8">
+                  <div className="flex mb-4">
+                    {Array.from({ length: testimonial.stars }).map((_, i) => (
+                      <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
+                    ))}
+                  </div>
+                  <p className="text-gray-600 leading-relaxed mb-6 italic">
+                    "{testimonial.text}"
+                  </p>
+                  <div className="flex items-center space-x-3">
+                    <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-full flex items-center justify-center">
+                      <span className="text-white font-bold text-sm">
+                        {testimonial.name.charAt(0)}
+                      </span>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-gray-900">{testimonial.name}</p>
+                      <p className="text-sm text-gray-500">{testimonial.role}</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
             ))}
           </div>
         </div>
