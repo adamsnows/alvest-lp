@@ -91,6 +91,13 @@ dist
 # Gatsby files
 .cache/
 # public — removed: Next.js uses /public for static assets, not build output
+!public/
+!*.png
+!*.jpg
+!*.jpeg
+!*.webp
+!*.gif
+!*.svg
 
 # Vuepress build output
 .vuepress/dist
