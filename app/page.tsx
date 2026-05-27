@@ -522,7 +522,6 @@ export default function AlvestLanding() {
               '/image copy 4.png',
               '/image copy 5.png',
               '/image copy 6.png',
-              '/image copy 7.png',
             ].map((image, index) => (
               <div
                 key={index}
